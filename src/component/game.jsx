@@ -10,7 +10,7 @@ const Hangman = () => {
     // state value
     const [ char, setChar ] = useState(animals())
     const [ guessedLetter, setGuessedLetter ] = useState([]);
-    console.log(char.name)
+
     // Derive Value
     const wrongLetterCount = guessedLetter.filter(letter => !char.name.includes(letter)).length;
     const gameWon = char.name.split("").every(letter => guessedLetter.includes(letter));
@@ -91,92 +91,96 @@ const Hangman = () => {
     
     return (
         <>
-            {gameWon && <Confetti width={window.innerWidth} height={window.innerHeight} />}
-           <header>
-                <div className="container text-center my-4">
-                    <h1 className="text-lg uppercase font-bold">Assemble : EndGame</h1>
-                    <p className="text-slate-400 leading-4">Guess the word within 8 attempts to keep the programming assembly!</p>
-                </div>
-           </header>
+           <div className="flex justify-center items-center flex-col h-screen  max-w-md m-auto">
+            <div className="md:border md:border-white p-10 rounded-sm">
+             {gameWon && <Confetti width={window.innerWidth} height={window.innerHeight} />}
+                <header className="m-5">
+                        <div className="container text-center flex flex-col gap-4">
+                            <h1 className="text-4xl ">Assemble <br /> Alphabet Pazzle</h1>
+                            <p className="text-white/70 text-lg leading-4">Guess the word within 8 attempts to keep the programming assembly!</p>
+                        </div>
+                </header>
 
-           <section className="game-status">
-                <div className="container text-center">
-                    <p 
-                        aria-live="polite" 
-                        role="status" 
-                        className={gameStatusClass}
-                    >
-                    {gameOver ? 
-                        (
-                        gameWon ? (
-                            <>
-                            <span className="text-lg w-full">Game Win!</span>
-                            Well Done! &#x1F600;   
-                            </>
-                            ) : (
+                <section className="game-status">
+                        <div className="container text-center">
+                            <p 
+                                aria-live="polite" 
+                                role="status" 
+                                className={gameStatusClass}
+                            >
+                            {gameOver ? 
+                                (
+                                gameWon ? (
+                                    <>
+                                    <span className="text-lg w-full">Game Win!</span>
+                                    Well Done! &#x1F600;   
+                                    </>
+                                    ) : (
+                                        <>
+                                        <span className="text-lg">Game Over!</span>
+                                        You are loosing. Better learning assemble. &#128546;    
+                                        </> 
+                                    )
+                                ) : null
+                            }
+                            {
+                                !gameOver && isLastGuessedLetterCorrect && 
                                 <>
-                                <span className="text-lg">Game Over!</span>
-                                You are loosing. Better learning assemble. &#128546;    
+                                    <span className="text-lg">
+                                        {getFarewellText(language.language[wrongLetterCount - 1].name)}
+                                    </span>  
                                 </> 
-                            )
-                        ) : null
-                    }
-                    {
-                        !gameOver && isLastGuessedLetterCorrect && 
-                        <>
-                            <span className="text-lg">
-                                {getFarewellText(language.language[wrongLetterCount - 1].name)}
-                            </span>  
-                        </> 
-                    }
-                    </p>
-                </div>
-           </section>
+                            }
+                            </p>
+                        </div>
+                </section>
 
-           <section className="sr-only" aria-live="polite" role="status">
-                    <p>{char.name.includes(guessedLetter[guessedLetter.length - 1]) ? 
-                    `Correct. the Letter ${guessedLetter[guessedLetter.length - 1]} is in the word` : 
-                    `Sorry. the Letter ${guessedLetter[guessedLetter.length - 1]} isn't in the word`}</p>
-                    <p>Current Word : {char.name.split("").map(letter => 
-                        guessedLetter.includes(letter) ? letter + "." : "Blank."
-                    ).join(" ")
-                    }</p>
-           </section>
+                <section className="sr-only" aria-live="polite" role="status">
+                            <p>{char.name.includes(guessedLetter[guessedLetter.length - 1]) ? 
+                            `Correct. the Letter ${guessedLetter[guessedLetter.length - 1]} is in the word` : 
+                            `Sorry. the Letter ${guessedLetter[guessedLetter.length - 1]} isn't in the word`}</p>
+                            <p>Current Word : {char.name.split("").map(letter => 
+                                guessedLetter.includes(letter) ? letter + "." : "Blank."
+                            ).join(" ")
+                            }</p>
+                </section>
 
-           <section className="language-chip">
-                <div className="container text-center">
-                    <ul className="chip max-w-80 mx-auto flex flex-wrap justify-center gap-1 text-sm my-4">
-                        {list}
-                    </ul>
-                </div>
-           </section>
+                <section className="language-chip">
+                        <div className="container text-center">
+                            <ul className="chip max-w-80 mx-auto flex flex-wrap justify-center gap-1 text-sm my-4">
+                                {list}
+                            </ul>
+                        </div>
+                </section>
 
-           <section className="character py-5">
-                <div className="container mb-5 m-auto">
-                    <img className="h-40 m-auto" src={char.imageUrl} alt="" />
-                </div>
-                <div className="charecter container text-center flex flex-wrap justify-center uppercase gap-1">
-                    {charElement}
-                </div>
-           </section>
+                <section className="character py-5">
+                        <div className="container mb-5 m-auto">
+                            <img className="h-40 m-auto" src={char.imageUrl} alt="" />
+                        </div>
+                        <div className="charecter container text-center flex flex-wrap justify-center uppercase gap-1">
+                            {charElement}
+                        </div>
+                </section>
 
-           <section className="keyboard py-5">
-            <div className="keys container text-center flex justify-center gap-2 max-w-96 flex-wrap">
-                {keyArray}
+                <section className="keyboard py-5">
+                    <div className="keys container text-center flex justify-center gap-2 max-w-96 flex-wrap">
+                        {keyArray}
+                    </div>
+                </section>
+
+                    <section className="newGame py-5">
+                        <div className="container text-center">
+                            {gameOver && 
+                            <button 
+                            onClick={startGame}
+                            className="bg-cyan-500 py-2 px-12 rounded uppercase text-sm">
+                                New Games
+                            </button>
+                            }
+                        </div>
+                    </section>
             </div>
-           </section>
-
-            <section className="newGame py-5">
-                <div className="container text-center">
-                    {gameOver && 
-                    <button 
-                    onClick={startGame}
-                    className="bg-cyan-500 py-2 px-12 rounded uppercase text-sm">
-                        New Games
-                    </button>
-                    }
-                </div>
-            </section>
+           </div>
         </>
     )
 }

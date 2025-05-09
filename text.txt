@@ -1,0 +1,38 @@
+Folder PATH listing
+Volume serial number is FCB5-3B6C
+C:.
+³   .gitignore
+³   eslint.config.js
+³   index.html
+³   package-lock.json
+³   package.json
+³   postcss.config.js
+³   README.md
+³   screenshort.png
+³   tailwind.config.js
+³   text.txt
+³   vite.config.js
+³   
+ÃÄÄÄpreview
+³       alphabet-pazzle.png
+³       hangman.png
+³       
+ÃÄÄÄpublic
+³       hangman.png
+³       
+ÀÄÄÄsrc
+    ³   App.jsx
+    ³   global.css
+    ³   main.jsx
+    ³   
+    ÃÄÄÄassets
+    ³       react.svg
+    ³       
+    ÃÄÄÄcomponent
+    ³       game.jsx
+    ³       util.js
+    ³       
+    ÀÄÄÄdata
+            animals.json
+            language.json
+            
