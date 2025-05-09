@@ -48,25 +48,6 @@ The **Alphabet Puzzle Game** is a React-based web application that challenges us
 
 ---
 
-## 💡 Creadit 
-
-- [Bootstrap v5.2.3](https://getbootstrap.com/)
-- [Fontawesome 6.2.1](https://fontawesome.com)
-- [Hover 2.3.2](http://ianlunn.github.io/Hover/)
-- [Owl Carousel v2.3.4](https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
-- [jquery-circle-progres v1.2.2](http://kottenator.github.io/jquery-circle-progress/)
-- [model](http://github.com/kylefox/jquery-modal)
-- [normalize v2.8.3](http://github.com/necolas/normalize.css)
-- [isotop](https://isotope.metafizzy.co/)
-- [jQuery v3.6.3](https://jquery.com/download/)
-- [Modernizr v2.8.3](www.modernizr.com/license/)
-
-
----
-
-
----
-
 ## 📁 Folder Structure
 
 ```bash
