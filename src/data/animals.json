@@ -1,0 +1,22 @@
+[
+  { "name": "dog", "imageUrl": "https://keystonekeynote.com/wp-content/uploads/2023/09/dog-puppy-on-garden-royalty-free-image-1586966191.jpg" },
+  { "name": "cat", "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" },
+  { "name": "elephant", "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" },
+  { "name": "tiger", "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" },
+  { "name": "lion", "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" },
+  { "name": "zebra", "imageUrl": "https://cdn.mos.cms.futurecdn.net/HjFE8NKWuCmgfHCcndJ3rK-650-80.jpg.webp" },
+  { "name": "giraffe", "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg" },
+  { "name": "kangaroo", "imageUrl": "https://www.worldanimalprotection.us/siteassets/images/wildlife/kangaroos/tall-kangaroo-getty.jpg" },
+  { "name": "panda", "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG" },
+  { "name": "bear", "imageUrl": "https://www.lamontagneart.com/wp-content/uploads/2024/11/LaMontagne_Bedtime.jpg" },
+  { "name": "wolf", "imageUrl": "https://wildearthguardians.org/wp-content/uploads/2024/12/Screenshot-2025-01-02-at-10.10.32-AM-min.png" },
+  { "name": "fox", "imageUrl": "https://creationtoday.org/wp-content/uploads/2017/06/red-fox-1200x675.png" },
+  { "name": "rabbit", "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/rabbit-breeds-american-white-1553635287.jpg" },
+  { "name": "deer", "imageUrl": "https://www.wpr.org/wp-content/uploads/2024/10/AP21356714167562-scaled.jpg" },
+  { "name": "horse", "imageUrl": "https://horsesandpeople.com.au/wp-content/uploads/2019/10/Spooky-behaviour.jpg" },
+  { "name": "monkey", "imageUrl": "https://i.natgeofe.com/n/c3ce77a8-1498-49a5-9d9e-4b5530070dfe/01-leaping-langur.jpg" },
+  { "name": "cheetah", "imageUrl": "https://i.natgeofe.com/n/de5643df-d07b-4547-b10a-3d5941022d46/01sarahcheetah.jpg" },
+  { "name": "dolphin", "imageUrl": "https://dolphinquest.com/wp-content/uploads/sites/6013/2024/01/Public-Financial-Donations.jpg" },
+  { "name": "shark", "imageUrl": "https://www.exploringnature.org/graphics/ocean/shark_great_white_header72.jpg" },
+  { "name": "whale", "imageUrl": "https://cdn.prod.website-files.com/665f17d0fb4bfc1e811460d3/665f17d0fb4bfc1e811468c3_9.jpg" }
+]

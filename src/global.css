@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply 
+        bg-slate-900 
+        text-white;
+
+        .container{
+            @apply 
+                mx-auto;
+
+            .chip li{
+                @apply rounded-sm px-1 relative;
+                
+
+                &.lost{
+                    @apply before:content-['💀'] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/[0.5];
+                }
+            }
+
+            &.charecter span{
+                @apply h-10 w-10 block bg-slate-800 leading-10 border-b-2
+            }
+
+            &.keys button{
+                @apply h-8 w-8 block bg-yellow-600 leading-8 rounded cursor-pointer text-sm font-bold
+                disabled:opacity-75 disabled:cursor-not-allowed;
+
+                &.correct{
+                    @apply bg-green-700 
+                }
+
+                &.wrong{
+                    @apply bg-red-900
+                }
+            }
+        }
+
+        .sr-only{
+            @apply absolute w-[1px] h-[1px] p-0 m-[-1] overflow-hidden border-0
+        }
+}
+

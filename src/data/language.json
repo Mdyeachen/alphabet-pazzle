@@ -1,0 +1,44 @@
+{
+    "language": [
+        {
+            "name": "HTML",
+            "bg-color": "#E2680F",
+            "text-color": "#F9F4DA"
+        },
+        {
+            "name": "CSS",
+            "bg-color": "#264DE4",
+            "text-color": "#FFFFFF"
+        },
+        {
+            "name": "JavaScript",
+            "bg-color": "#F7DF1E",
+            "text-color": "#000000"
+        },
+        {
+            "name": "Python",
+            "bg-color": "#3776AB",
+            "text-color": "#FFFFFF"
+        },
+        {
+            "name": "C++",
+            "bg-color": "#00599C",
+            "text-color": "#FFFFFF"
+        },
+        {
+            "name": "C#",
+            "bg-color": "#239120",
+            "text-color": "#FFFFFF"
+        },
+        {
+            "name": "PHP",
+            "bg-color": "#777BB4",
+            "text-color": "#FFFFFF"
+        },
+        {
+            "name": "Go",
+            "bg-color": "#00ADD8",
+            "text-color": "#FFFFFF"
+        }
+    ]
+}
